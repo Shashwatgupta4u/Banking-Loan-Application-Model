@@ -22,8 +22,8 @@
 | `train_model.py`            | Script to train and save the ML model            |
 | `app.py`                    | Flask backend application, routes, and hosting   |
 | `index.html`                | Main frontend UI for model input/output          |
-| `./static/styles.css`       | Frontend stylesheet for modern look/feel         |
-| `./static/script.js`        | Frontend script for async prediction UI          |
+| `static/styles.css`       | Frontend stylesheet for modern look/feel         |
+| `static/script.js`        | Frontend script for async prediction UI          |
 
 ***
 
