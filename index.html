@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Default Prediction</title>
+    <link rel="stylesheet" href="./static/styles.css">
+    <script src="./static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Default Prediction</h1>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="clo">Credit Lines Outstanding:</label>
+                <input type="number" id="clo" value="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lao">Loan Amount Outstanding:</label>
+                <input type="number" id="lao" value="15000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tdo">Total Debt Outstanding:</label>
+                <input type="number" id="tdo" value="20000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="income">Income:</label>
+                <input type="number" id="income" value="60000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ye">Years Employed:</label>
+                <input type="number" id="ye" value="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fs">FICO Score:</label>
+                <input type="number" id="fs" value="700" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rr">Recovery Rate (in %):</label>
+                <input type="number" id="rr" step="1" value="10" required>
+            </div>
+
+            <button type="submit">Evaluate</button>
+        </form>
+
+        <!-- Modal for Results -->
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Results</h2>
+                <p id="resultText"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Additional JavaScript -->
+    <script src="./static/script.js"></script>
+</body>
+</html>
